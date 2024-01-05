@@ -1,0 +1,64 @@
+:where(.rootX) {
+  display: grid;
+  gap: 0.75em 0;
+  max-inline-size: 26em;
+
+  & > label {
+    display: grid;
+    column-gap: 4px;
+
+    & > span {
+      font-size: 0.8em;
+    }
+  }
+
+  & fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: grid;
+
+    & legend {
+      padding-block-end: 0.25em;
+      font-size: 0.8em;
+    }
+
+    & label {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 4px;
+      padding-block: 0.3em;
+    }
+
+    & span {
+      color: var(--gray-400, #a1a1aa);
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    & em {
+      font-style: normal;
+    }
+
+    & input {
+      accent-color: var(--yellow-300, #fde047);
+    }
+  }
+
+  & button {
+    inline-size: fit-content;
+    color: var(--gray-700, #3f3f46);
+    font-size: 0.7em;
+    font-weight: 700;
+    padding-block: 0.75em;
+    padding-inline: 1em;
+    font-family: inherit;
+    border-radius: 0.125rem;
+    border: 1px solid rgba(212, 212, 216, 0.5);
+    background: var(--yellow-300, #fde047);
+  }
+
+  & input {
+    cursor: pointer;
+  }
+}
